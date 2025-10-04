@@ -137,7 +137,7 @@ app.use("/api/admin/stats", adminMiddleware, adminStatsRoutes);
 
 
 //setup sentry error handler
-Sentry.setupExpressErrorHandler(app);
+Sentry.setupExpressErrorHandler(app); //sentery setup
 
 //unhandled rejection
 process.on("unhandledRejection", (err) => {
